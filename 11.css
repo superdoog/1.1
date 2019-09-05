@@ -1,0 +1,23 @@
+div {
+    background: greenyellow;
+    margin: 30px;
+}
+.div1 {
+    background: green;
+    width: 200px;
+    height: 200px;
+}
+.div2,.div3,.div4,.div5 {
+    float: left;
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.container::before,.container::after {
+    content: "";
+    display: table;
+}
+.container::after {
+    clear: both;
+}

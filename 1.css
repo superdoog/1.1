@@ -1,6 +1,21 @@
-div{
-    color: brown;
-    height: 100px;
-    width: 100px;
-    background: skyblue;
+
+
+.box1 {
+    
+    background: yellow;
+    margin: 30px;
+    padding: 1px;
+
+
+}
+
+/*div {
+    display: inline-block;
+    width: 800px;
+    border: 1px solid black;
+}*/
+
+.box2 {
+    margin: 30px;
+    background: green;
 }
