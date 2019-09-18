@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript函数学习</title>
+    <script type="text/javascript">
+        function add(x,y){
+            return x+y;
+        }
+
+        var i = 2;
+        var jia = add;
+
+        console.log(add(1,1));
+        console.log(jia(1,1));
+
+        function b(fun){
+            return fun;
+        }
+        var rs = b(add)(2,2);
+        console.log(rs);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

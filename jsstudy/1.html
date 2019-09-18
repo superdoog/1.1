@@ -2,21 +2,36 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>第一个js</title>
+    <title>使用confirm语句</title>
+    <script type="text/javascript">
+    
+        function confirm_fun(){
+            var rs = confirm("确认对话框实验，点击确认返回true，点击取消返回false");
+            if (rs) {
+                document.write("点击了确认");
+            }else{
+                document.write("点击了取消");
+            }
+        }
+
+        function pop_fun(){
+            var rs = prompt("请输入您的姓名","");
+            document.write(rs);
+        }
+
+        var person = {
+            name:"xiaobai",
+            age:18
+        }
+        for (var key in person) {
+            console.log(person[key]);
+        }
+        </script>
 </head>
 <body>
-    <a href="http://blog.chanke.xyz">蝉壳博客</a>
-    <script>
-    //弹窗
-    alert("弹窗的内容");
-    //内容写到页面
-    document.write("aaaa");
-    //内容写到控制台
-    console.log("bbb");
-    //变量就是个容器
-    var a = 1;
+    <button type="button" onclick="confirm_fun()">实验确认对话框</button>
+    <button type="button" onclick="pop_fun()">实验提示对话框</button>
 
-
-    </script>
+    
 </body>
 </html>
