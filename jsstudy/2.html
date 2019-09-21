@@ -19,6 +19,46 @@
         }
         var rs = b(add)(2,2);
         console.log(rs);
+///////////////////////////////////
+        function aaa(){
+
+        }
+        var bbb = function(){
+
+        }
+
+        var ccc = function xxx(){
+
+        }
+
+        function ddd(fun){
+            //ddd函数的内部我们想要知道，参数传过来的，函数的名字，想要传来的参数是哪个函数的时候，name就用上了
+            console.log(fun.name)
+        }
+        console.log(aaa.name);
+        console.log(bbb.name);
+        console.log(ccc.name);
+        ddd(aaa);
+        ddd(bbb);
+        ///////////////////////////////
+        function add(x,y){
+            return x+y;
+            //add函数的注释
+            /*
+             add函数的多行注释
+            */
+        }
+        console.log(add.length);
+        ///////////////////////
+        var rs = add.toString();
+        console.log(rs);
+        ///////////////////////
+        function getstr(fun){
+            var strArr = fun.toString().split("\n");
+            var rs = strArr.slice(2,strArr.length-1).join("\n");
+            console.log(rs);
+        }
+        getstr(add);
     </script>
 </head>
 <body>
